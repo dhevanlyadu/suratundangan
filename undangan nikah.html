@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Wedding Invitation</title>
+  
+  <!-- Bootstrap 5 CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  
+  <style>
+    body {
+      background: linear-gradient(135deg, #fceabb, #f8b500);
+      font-family: 'Georgia', serif;
+      color: #4a3c31;
+      padding: 2rem;
+    }
+    .invitation-card {
+      background: white;
+      border-radius: 1rem;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      max-width: 600px;
+      margin: 2rem auto;
+      padding: 2.5rem;
+    }
+    .divider {
+      width: 80px;
+      height: 3px;
+      background-color: #f8b500;
+      margin: 1rem auto 2rem;
+      border-radius: 2px;
+    }
+    .names {
+      font-family: 'Georgia', serif;
+      font-size: 2.5rem;
+      font-weight: 700;
+    }
+    .date-time, .venue {
+      font-style: italic;
+      font-weight: 500;
+      margin-top: 1rem;
+    }
+    footer {
+      font-size: 0.9rem;
+      text-align: center;
+      margin-top: 3rem;
+      color: #7a6f62;
+    }
+  </style>
+</head>
+<body>
+
+  <article class="invitation-card text-center">
+    <h2 class="mb-3">You're Invited</h2>
+    <div class="divider"></div>
+
+    <p class="mb-4 fst-italic">With great joy, we invite you to the wedding celebration of</p>
+
+    <p class="names text-uppercase">Putri Anggun &amp; Budi Santoso</p>
+    
+    <p class="date-time mt-4 fs-5">
+      Saturday, 10th August 2024<br />
+      At 10:00 AM - 12:00 PM
+    </p>
+    
+    <p class="venue mt-3 fs-6">
+      Grand Ballroom, Hotel Sahabat<br />
+      Jalan Kebahagiaan No. 25, Jakarta
+    </p>
+
+    <p class="mt-4">Reception to follow immediately after the ceremony</p>
+
+    <p class="mt-4">We would be honored by your presence.<br />
+    Please kindly RSVP by 1st July 2024.</p>
+
+    <button type="button" class="btn btn-warning mt-3 px-4" data-bs-toggle="modal" data-bs-target="#photoModal">
+      RSVP Now
+    </button>
+  </article>
+
+  <!-- Modal for Photos -->
+  <div class="modal fade" id="photoModal" tabindex="-1" aria-labelledby="photoModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content rounded-4">
+        <div class="modal-header border-0">
+          <h5 class="modal-title" id="photoModalLabel">Our Memories</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-0">
+          <div id="carouselPhotos" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner rounded-4">
+              <div class="carousel-item active">
+                <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80" class="d-block w-100" alt="Photo 1"/>
+              </div>
+              <div class="carousel-item">
+                <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=800&q=80" class="d-block w-100" alt="Photo 2"/>
+              </div>
+              <div class="carousel-item">
+                <img src="https://images.unsplash.com/photo-1486308510493-c262a29b55ae?auto=format&fit=crop&w=800&q=80" class="d-block w-100" alt="Photo 3"/>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselPhotos" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselPhotos" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        <div class="modal-footer border-0">
+          <button type="button" class="btn btn-secondary px-4" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2024 Putri &amp; Budi Wedding Invitation
+  </footer>
+
+  <!-- Bootstrap 5 JS Bundle CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
